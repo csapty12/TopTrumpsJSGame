@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href = "informationpage.css" />
+<link rel="stylesheet" type="text/css" href = "navbar.css" />
+<script src = "informationpage.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<title>Information Page</title>
+</head>
+<!--standard navigation bar used through out -->
+<nav>
+    <ul>
+        <li><a href = "welcome.html"> Welcome! </a></li>
+        <li><a href = "card.html">Player vs Player Mode </a></li>
+        <li><a href = "multiplayermode.html"> Join Game </a></li>
+        <li><a href = "card.html"> Player vs Computer Mode</a> </li>
+        <li class = "active"> Ship Information</li>
+        <li><a href  = "howtoplay.html"> How To Play The Game </a></li>
+    </ul>
+</nav>
+<main>
+
+
+	<div id = "infopage">
+	<H2> Ship Information</H2>
+	<div id = "leftcolumn">
+		<ul>	<!--clickable text boxes which call the specificship(i) function-->
+			<li id = "tl" onclick="specificship(1);loadgraph(1);">Maersk Mc-Kinney Moller</li>
+			<li onclick="specificship(2);loadgraph(2);">CSCL Globe </li>
+			<li onclick="specificship(3);">Barzan </li>
+			<li onclick="specificship(4);">MSC Maya </li>
+			<li onclick="specificship(5);">Emma Maersk </li>
+			<li onclick="specificship(6);">Regina Maersk </li>
+			<li onclick="specificship(7);">Repulse Bay </li>
+			<li onclick="specificship(8);">Frankfurt Express </li>
+			<li onclick="specificship(9);">CMA CGM Christophe Colomb </li>
+			<li onclick="specificship(10);">Antwerpen Express </li>
+			<li onclick="specificship(11);">Sonderborg Strait </li>
+			<li onclick="specificship(12);">Henneke Rambow </li>
+			<li onclick="specificship(13);">Nedlloyd America </li>
+			<li onclick="specificship(14);">Houston Express </li>
+			<li onclick="specificship(15);">COSCO Asia </li>
+			<li onclick="specificship(16);">Hyundai Force </li>
+			<li onclick="specificship(17);">MSC Ajaccio </li>
+			<li onclick="specificship(18);">Osaka Express </li>
+			<li onclick="specificship(19);">Manchester Bridge </li>
+			<li id = "bl" onclick="specificship(20);">BF Aurelia </li>
+		</ul>
+	</div>
+	<!--middle section div -->
+	<div id = "middlecolumn">
+			<img id = "img"/></div>
+			<div id = "cardinfo">
+			
+				<ul>
+					<li id = "name"></li>
+		
+					<li id = "built"></li>
+					
+					<li id = "tonnage"></li>
+					
+					<li id = "len" ></li>
+				
+					<li id = "capacity"></li>
+				</ul>
+
+			</div>
+	</div>
+	<!--right column div -->
+	<div id = "rightcolumn" >
+		<div class = "chart">
+
+		</div>
+
+
+
+		
+	</div>
+	</div>
+</main>
+</html>

@@ -1,0 +1,66 @@
+header{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.card {
+    display: inline-block;
+    position: fixed;
+    height: 60%;
+    width: 25%;
+    border: px solid #66b3ff;
+    top: 10%;
+    border-radius: 25px;
+    background-image: url(water.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+#p1 {
+    float: left;
+    margin-left: 5%;
+}
+#p2 {
+    float: right;
+    right: 5%;
+}
+.image {
+    padding-top: 8px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    max-width: 90%;
+    max-height: 50%;
+}
+.info {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    max-width: 90%;
+    max-height: 50%;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    line-height: 200%;
+    padding: 5%;
+}
+.info ul li:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    padding: 1px;
+}
+li {
+    list-style-type: none;
+    color: #fff;
+}
+.message {
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    clear: left;
+    left: 43%;
+    font-size:30px;
+    line-height:100%;
+}

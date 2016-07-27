@@ -1,0 +1,124 @@
+
+
+/*-------------------style the information page-----------------------------------------------------------------*/
+
+#infopage{
+	background-color: #002db3;
+	position:fixed;
+	width:80%;
+	height:90%;
+	border: solid;
+	left:9%;
+	margin-top: 1%;
+	border-radius:25px;
+}
+h2{
+	text-align: center;
+	font-size: 36px;
+	color:white;
+}
+/*separated the div into 3 sections*/
+#leftcolumn{
+	position: fixed;
+	top:14%;
+	border:5px solid black;
+	text-align: center;
+	left: 11%;
+	width:18%;
+	list-style-type: none;
+	background-color: #f1f1f1;
+	border-radius: 17px;
+	line-height: 200%;
+
+}
+
+#leftcolumn ul li{
+	list-style-type: none;
+}
+
+#leftcolumn ul li:hover{
+	
+	background: #1a75ff;
+	text-decoration: none;
+	color:#ffffff;
+	border-radius: 25px;
+
+}
+#bl:hover{
+	background: #1a75ff;
+	text-decoration: none;
+	color:#ffffff;
+	border-bottom-left-radius: 25px;
+}
+
+#middlecolumn{
+	background-color: #f1f1f1;
+	position: fixed;
+	top:14%;
+	border:5px solid black;
+	height:80%;
+	width: 27%;
+	left: 29%;
+	border-radius: 25px;
+	
+}
+#img{
+	position:fixed;
+	top:18%;
+	left:30%;
+	height: 30%;
+	width:25%;
+	bottom:10%;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+#cardinfo{
+	position:fixed;
+	top:55%;
+	left:30%;
+	height: 30%;
+	width:25%;
+	bottom:10px;
+	padding-bottom: 1%;
+	border: 1px solid black;
+	border-radius: 25px;
+	text-align: center;
+
+
+}
+#cardinfo ul li{
+	list-style-type: none;
+	line-height:150%;
+	padding-top: 6%;
+	padding-left: 10px;
+
+}
+
+#rightcolumn{
+	background-color: #f1f1f1;
+	position: fixed;
+	top: 14%;
+	border:5px solid black;
+	height:76%;
+	width: 30%;
+	right: 13%;
+	border-radius: 25px;
+
+}
+
+/*styling for the D3 bar graph that i made */
+.chart div {
+  font: 10px sans-serif;
+  background-color: teal;
+  text-align: right;
+  padding: 1%;
+  margin: 10%;
+  color: white;
+  font-weight: bolder;
+}
+
+
+.bar:hover{
+  fill: orange;
+}

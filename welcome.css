@@ -1,0 +1,73 @@
+/*code that styles the main buttons fo the welcome page*/
+html{
+    background-color:#66b3ff;
+    display: inline-block;
+}
+header{
+    position: fixed;
+    left:43%;
+    bottom:54%;
+    font-size: 40px;
+
+}
+/*style the image div of a card */
+img{
+    position:fixed;
+    left:40%;
+    bottom:41%;
+}
+
+.button {
+    position: fixed;
+    background-color: #6699ff;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    border: 3px solid #fff0b3;
+    color: #ffffff;
+    padding-top:2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration-style: none;
+    border-radius: 25px;
+
+}
+a{
+    
+    text-decoration: none;
+}
+.button a:hover{
+    color:white;
+}
+/*single player mode*/
+#single{
+    float:left;
+    left: 22%;
+    margin-top: 20%;
+}
+/*multiplayer mode */
+#multi{
+    float:right;
+    right:21%;
+    margin-top: 20%;
+}
+/*information page*/
+#info{
+    left: 42%;
+    top:20%;
+}
+
+/*how to play page */
+#how{
+    left: 43%;
+    bottom:24%;
+    padding-right: 3%;
+    padding-left:3%;
+}
+
+footer{
+    float:right;
+    margin-top:50%;
+}

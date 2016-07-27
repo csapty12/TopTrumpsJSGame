@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--link to card.css where the styling occurs and the functionality of 
+cards in relation to the server can be found using the card.js script.-->
+    <link rel="stylesheet" type="text/css" href="card.css" />
+    <link rel = "stylesheet" type="text/css" href = "navbar.css">
+    <script src="multiplayermode.js"></script>
+    <title>Top Trumps</title>
+</head>
+
+<body>
+    <main>
+    <nav>
+    <ul>
+        <li><a href = "welcome.html"> Welcome! </a></li>
+        <li class = "active">Player vs Player Mode </a></li>
+        <li class = "active"> Join Game</li>
+        <li><a href = "card.html"> Player vs Computer Mode</a> </li>
+        <li><a href  = "informationpage.html"> Ship Information </a></li>
+        <li><a href  = "howtoplay.html"> How To Play The Game </a></li>
+    </ul>
+</nav>
+        <!-- container for the card that will display information for 
+    player 1's card. the information displayed on the card is the name, built, tonnage, len and capactiy.-->
+        <div class="card" id="p1" style = "display: none">
+            <img class = "image" id="p1Image" />
+            <div class="info">
+                <ul>
+                    <!-- name of the ship -->
+                    <li id="name"></li>
+                    <!-- build date of the ship -->
+                    <li onclick="selectButton(1);" id="built"></li>
+                    <!-- tonnage of the ship -->
+                    <li onclick="selectButton(2);" id="tonnage"></li>
+                    <!-- length of the ship -->
+                    <li onclick="selectButton(3);" id="len"></li>
+                    <!-- capactiy of the ship -->
+                    <li onclick="selectButton(4);" id="capacity"></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="card" id="p2" >
+            <img class = "image" id="p2Image" />
+            <div class="info">
+                <ul>
+                    <!-- name of the ship -->
+                    <li id="p2name"></li>
+                    <!-- build date of the ship -->
+                    <li id="p2built"></li>
+                    <!-- tonnage of the ship -->
+                    <li id="p2tonnage"></li>
+                    <!-- length of the ship -->
+                    <li id="p2len"></li>
+                    <!-- capactiy of the ship -->
+                    <li id="p2capacity"></li>
+                </ul>
+            </div>
+        </div>
+	
+	<!--section to enter the id to conenct the two player together -->
+        <div class ="box">
+            Enter Game ID <br>
+           <input type="number" name="gameID" id = "gameID">
+           <br>
+           <input type="submit" value="Submit" onclick = "loadgame();">
+           <br>
+           </div>
+        <div class="message">
+            <p>Click a category to play your turn</p>
+            <p id="humanscore"> Your Score: </p>
+            <p id= "compscore"> Player 2 score: </p>
+            <p> current player turn: </p>
+        </div>
+
+        <p id = "gameid"></p>
+
+
+    </main>
+</body>
+
+</html>

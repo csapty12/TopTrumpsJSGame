@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="card.css" />
+<link rel="stylesheet" type="text/css" href="navbar.css" />
+<script src="card2.js"></script>
+    <title>Top Trumps</title>
+</head>
+<body>
+<!--standard nav bar used throughout-->
+<nav>
+    <ul>
+        <li><a href = "welcome.html"> Welcome! </a></li>
+        <li><a href  = "player1.html">Player vs Player Mode </a></li>
+        <li class = "active"> Player vs Computer Mode </li>
+        <li><a href  = "informationpage.html"> Ship Information </a></li>
+        <li><a href  = "howtoplay.html"> How To Play The Game </a></li>
+    </ul>
+</nav>
+<main>
+    <header>Welcome to: Single Player Mode</header>
+<div class="card" id="p1">
+            <img class = "image" id="p1Image" alt="image1"/>
+            <div class="info">
+                <ul>
+                    <!-- name of the ship -->
+                    <li id="name"></li>
+                    <!-- build date of the ship -->
+                    <li onclick="selectButton(1);" id="built"></li>
+                    <!-- tonnage of the ship -->
+                    <li onclick="selectButton(2);" id="tonnage"></li>
+                    <!-- length of the ship -->
+                    <li onclick="selectButton(3);" id="len"></li>
+                    <!-- capactiy of the ship -->
+                    <li onclick="selectButton(4);" id="capacity"></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="card" id="p2" style="visibility: visible;">
+            <img class = "image" id="p2Image" alt="image2" />
+            <div class="info">
+                <ul>
+                    <!-- name of the ship -->
+                    <li id="p2name"></li>
+                    <!-- build date of the ship -->
+                    <li id="p2built"></li>
+                    <!-- tonnage of the ship -->
+                    <li id="p2tonnage"></li>
+                    <!-- length of the ship -->
+                    <li id="p2len"></li>
+                    <!-- capactiy of the ship -->
+                    <li id="p2capacity"></li>
+                </ul>
+            </div>
+        </div>
+	<!--message to display standard text initially -->
+        <div class="message">
+            <p id="humanscore"> Your Score: 10 </p>
+            <p id= "compscore"> Player 2 score: 10 </p>
+            <p id = winner > </p>
+            
+        </div>
+
+
+
+    </main>
+
+</body>
+</html>
